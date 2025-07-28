@@ -33,8 +33,6 @@ export class AuthService {
         }
     }
 
-    
-
 }
 
 export default authService = new AuthService();
