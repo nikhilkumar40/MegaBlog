@@ -1,7 +1,7 @@
 import { Client, Databases, ID, Query } from 'appwrite'
 import config from '../config/config';
 
-export class DbConfigService {
+ class DbConfigService {
     client = new Client();
     databases = new Databases();
 
