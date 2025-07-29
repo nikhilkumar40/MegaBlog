@@ -33,6 +33,15 @@ export class AuthService {
         }
     }
 
+    async getCurrentUser(){
+        try {
+           return await this.account.get();
+        } catch (error) {
+            console.error(error)
+        }
+        return null;
+    }
+
 }
 
 const authService = new AuthService();
