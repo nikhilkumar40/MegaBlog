@@ -38,3 +38,5 @@ export class FileService{
         return this.bucket.getFilePreview(config.appwriteBucketId, fileId)
     }
 }
+
+export default fileService = new FileService();
