@@ -44,7 +44,7 @@ import config from '../config/config';
         }
     }
 
-    async getDocument(slug){
+    async getPost(slug){
         try {
           return await this.databases.getDocument(config.appwriteDatabaseId, config.appwriteCollectionId, slug)
         } catch (error) {
@@ -53,7 +53,7 @@ import config from '../config/config';
         }
     }
 
-    async getAllDocuments(queries = [Query.equal("status", "active")]){
+    async getAllPosts(queries = [Query.equal("status", "active")]){
         try {
         return await this.databases.listDocuments(
             config.appwriteDatabaseId,
