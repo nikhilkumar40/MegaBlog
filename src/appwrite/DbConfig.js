@@ -68,6 +68,4 @@ import config from '../config/config';
     }
 }
 
-export const dbConfigService = new DbConfigService();
-
-export default DbConfigService;
+export default dbConfigService = new DbConfigService();
