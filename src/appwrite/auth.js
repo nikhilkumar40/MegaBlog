@@ -9,9 +9,9 @@ export class AuthService {
         this.account = new Account(this.client)
     }
 
-    async signUp(email, password) {
+    async signUp(email, password, name) {
         try {
-            return await this.account.create(ID.unique(), email, password)
+            return await this.account.create(ID.unique(), email, password, name)
         } catch (error) {
             throw error;
         }
